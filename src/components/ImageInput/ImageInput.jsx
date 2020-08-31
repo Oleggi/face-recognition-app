@@ -1,26 +1,31 @@
 import React from "react";
 import style from "./ImageInput.module.css";
 
-const ImageInput = () => {
+const ImageInput = ({ inputData, onInputChange, onButtonSubmit }) => {
   return (
-      <div className="input-group mb-3 container-sm">
+    <div className={style.container}>
+      <div className="input-group mb-3">
         <input
           type="text"
-          class="form-control"
+          className="form-control"
           placeholder="Image link"
           aria-label="Image link"
           aria-describedby="button-addon2"
+          value={inputData}
+          onChange={onInputChange}
         />
-        <div class="input-group-append">
+        <div className="input-group-append">
           <button
-            class="btn btn-outline-light"
+            className="btn btn-outline-light"
             type="button"
             id="button-addon2"
+            onClick={onButtonSubmit}
           >
             Detect
           </button>
         </div>
       </div>
+    </div>
   );
 };
 

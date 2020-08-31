@@ -1,7 +1,15 @@
 body {
-  background-color: #457b9d;
+  background-color: #354f52;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 
-.container {
-  text-align: center;
+.particles {
+  position: fixed;
+  top: 0;
+  right: 0;
+  left: 0;
+  bottom: 0;
+  z-index: -2;
 }

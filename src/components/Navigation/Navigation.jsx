@@ -4,7 +4,7 @@ import style from "../Header/Header.module.css";
 const Navigation = (props) => {
     return (
         <div className={style.nav}>
-            <button type="button" class="btn btn-primary">Sign Out</button>
+            <button type="button" className="btn btn-primary">Sign Out</button>
         </div>
     )
 };
