@@ -12,7 +12,7 @@ export const clarifaiAPI = {
       },
 
       function (err) {
-        // there was an error
+        console.log(err);
       }
     );
   },

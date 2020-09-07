@@ -26,3 +26,13 @@ const Login = () => {
 };
 
 export default Login;
+
+const testFunc = (string) => {
+  let evenNums = [];
+   for(let i = 1; i <= string.length; i++) {
+    if(!(i % 2)) {
+      evenNums = evenNums.push(string[i]);
+    }
+  }
+  console.log(evenNums); 
+};

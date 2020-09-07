@@ -68,6 +68,7 @@ class MainPageContainer extends React.Component {
            }
           });
       };
+      
       render () {
         return (
             <>
