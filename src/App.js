@@ -24,10 +24,10 @@ class App extends React.Component {
     <div className='App'>
       <Particles params={particlesConfig} className='particles' />
       <Switch>
-        <Route exact path="/face-recognition-app" render={() => {return <Redirect to={'/main'} />}} />
+        <Route exact path="/" render={() => {return <Redirect to={'/face-recognition-app'} />}} />
+        <Route path="/face-recognition-app" component={MainPageContainer} />
         <Route path="/login" render={Login} />
         <Route path="/register" render={Register} />
-        <Route path="/main" component={MainPageContainer} />
       </Switch>
     </div>
   );
